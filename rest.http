@@ -1,0 +1,54 @@
+@host = http://127.0.0.1:3000/api
+
+###
+# @name menus
+GET {{host}}/menus/getMenus HTTp/1.1
+Content-Type: application/json
+
+###
+# @name books
+GET {{host}}/books/getBooks HTTp/1.1
+Content-Type: application/json
+
+###
+# @name session
+GET {{host}}/auth/signin HTTp/1.1
+Content-Type: application/json
+
+###
+# @name session
+GET {{host}}/matters/getMatters HTTp/1.1
+Content-Type: application/json
+
+###
+# @name stopWatchItems
+GET {{host}}/lawyer-stopwatch/getStopWatchItems HTTp/1.1
+Content-Type: application/json
+
+###
+# @name stopWatchItems
+POST {{host}}/lawyer-stopwatch/addStopwatchItems HTTp/1.1
+Content-Type: application/json
+
+[
+  {
+    "narration": "Fusce consequat. Nulla nisl.",
+    "itemDate": "2022-12-02T07:30:37Z",
+    "startedAt": "2023-04-20T22:14:54Z",
+    "endedAt": null,
+    "createdById": "cllds5v370000hbzg25sorxzj",
+    "taskId": 11,
+    "matterId": 1196
+  },
+  {
+    "narration": "Fusce consequat. Nulla nisl.",
+    "itemDate": "2022-12-02T07:30:37Z",
+    "startedAt": "2023-04-20T22:14:54Z",
+    "endedAt": null,
+    "createdById": "cllds5v370000hbzg25sorxzj",
+    "taskId": 11,
+    "matterId": 1196
+  }
+]
+
+
